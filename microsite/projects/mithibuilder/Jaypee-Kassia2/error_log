@@ -1,0 +1,2 @@
+[31-Jan-2014 04:11:16] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/ashwini/public_html/UDAIPROPMART.COM/udai/microsite/projects/mithibuilder/Jaypee-Kassia2/connection.php on line 1
+[31-Jan-2014 04:11:16] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home2/ashwini/public_html/UDAIPROPMART.COM/udai/microsite/projects/mithibuilder/Jaypee-Kassia2/connection.php on line 4
