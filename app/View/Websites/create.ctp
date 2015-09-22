@@ -41,8 +41,8 @@
 			<!-- Form -->
 			<h3 class="tit">Create Microsite</h3>
 			<fieldset>
-				
-<?php echo $this->Form->Create('websites',array('action'=>'create','type'=>'file'));  ?>
+                            <p><?php echo $this->Session->Flash(); ?></p>				
+<?php echo $this->Form->Create('Website',array('action'=>'create','type'=>'file'));  ?>
 				
 				
  <fieldset>
@@ -56,7 +56,7 @@
  -->
 <?php $options = array('Residential' => 'Residential', 'Commercial' => 'Commercial');
 $attributes = array('legend' => false,'value'=>'Residential','onclick'=>'toggleSelect(this.value)');
-echo $this->Form->radio('proj_category', $options, $attributes); ?>
+echo $this->Form->radio('project_category', $options, $attributes); ?>
 
 <br />
 <?php echo $this->Form->input('residential',array('options'=>$residential,'label'=>false,'id'=>'res')); ?>
@@ -76,7 +76,7 @@ echo $this->Form->radio('proj_category', $options, $attributes); ?>
 	<tr>
 						<td>Project Name:</td>
 						<td>
-                                                <?php echo $this->Form->input('projectname',array('id'=>'mpn','label'=>false));  ?>
+                                                <?php echo $this->Form->input('project_name',array('id'=>'mpn','label'=>false));  ?>
                                     
                                                 </td>
 	</tr>
